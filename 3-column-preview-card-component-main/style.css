@@ -1,0 +1,112 @@
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.component {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 120rem;
+  border-radius: 10px;
+  height: 500px;
+  width: 920px;
+  overflow: hidden;
+}
+
+.card {
+  padding: 3rem;
+  padding-right: 3.5rem;
+  position: relative;
+}
+
+.card.one {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card.two {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card.three {
+  background-color: hsl(179, 100%, 13%);
+}
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  color: hsl(0, 0%, 95%);
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn {
+  padding: 0.9rem 2rem;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 3rem;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.btn.one {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn.two {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn.three {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9rem;
+}
+
+.btn:hover,
+.btn:active {
+  background: none;
+  outline: 1px solid #fff;
+  color: #fff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MOBILE */
+
+@media (max-width: 35em) {
+  .component {
+    padding: 20rem 1rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .card {
+    height: 350px;
+  }
+}
